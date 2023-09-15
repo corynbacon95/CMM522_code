@@ -1,0 +1,40 @@
+CMM522_code
+name.txt
+outputs
+research.txt
+search.log
+search.txt
+search.txt2
+slurm-2433882.out
+slurm-2436011.out
+slurm-2447215.out
+slurm-2447227.out
+slurm-2447249.out
+slurm-2447269.out
+slurm-2447324.out
+slurm-2454225.out
+variables.txt
+I gotta embrace the marble
+I gotta sniff the marble
+I gotta lick the marble
+I gotta wash the marble
+I gotta date the marble
+I gotta be the marble
+#!/bin/bash
+#SBATCH --job-name=homework5
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --mem=100mb
+#SBATCH --time=00:01:00
+#SBATCH --partition=windfall
+#SBATCH --account=windfall
+#SBATCH --mail-type=begin
+#SBATCH --mail-type=end
+#SBATCH --mail-user=corynbacon95@arizona.edu
+ls ~/ccbb_projects/
+onion=("embrace sniff lick wash date be")
+for i in ${onion}
+    do echo "I gotta ${i} the marble"
+done
+grep [a-f] verbs.sbatch
+Detailed performance metrics for this job will be available at https://metrics.hpc.arizona.edu/#job_viewer?action=show&realm=SUPREMM&resource_id=5&local_job_id=2455165 by 8am on 2023/09/14.
